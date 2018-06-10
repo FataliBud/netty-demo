@@ -20,9 +20,7 @@ public class PlainOioServer {
         for (;;) {
             try (final Socket clientSocket = socket.accept()) {
                 System.out.println("Accepted connection from " + clientSocket);
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
+                new Thread(() ->  {
                         OutputStream out = null;
                         try {
                             out = clientSocket.getOutputStream();
@@ -32,7 +30,6 @@ public class PlainOioServer {
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-                    }
                 }).start();
             }
         }

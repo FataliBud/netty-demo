@@ -40,5 +40,18 @@
 
 ### netty写个Echo服务
 
+使用exec-maven-plugin插件启动服务。
+
+服务端的启动命令：
+
+```bash
+mvn clean package install #其中install是phase
+```
+
+客户端启动命令：
+
+```bash
+mvn exec:java -Dexec.mainClass="com.zhoujunwen.me.client.EchoClient" -Dexec.args="localhost 9999" -Dexec.classpathScope=runtime
+```
 
 

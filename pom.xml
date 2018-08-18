@@ -11,6 +11,7 @@
     <modules>
         <module>jnative</module>
         <module>echo</module>
+        <module>socketstudy</module>
     </modules>
 
     <name>netty-demo</name>

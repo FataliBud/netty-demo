@@ -15,7 +15,7 @@ import static io.netty.util.CharsetUtil.UTF_8;
  * @author zjw
  * @version 1.0
  */
-public class HttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
+public class HttpServerChannelHandler extends SimpleChannelInboundHandler<HttpObject> {
     private HttpRequest request;
 
     @Override

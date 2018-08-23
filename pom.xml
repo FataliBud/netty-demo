@@ -12,6 +12,7 @@
         <module>jnative</module>
         <module>echo</module>
         <module>socketstudy</module>
+        <module>nettyhttp</module>
     </modules>
 
     <name>netty-demo</name>
@@ -40,7 +41,7 @@
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
-                <version>4.0.23.Final</version>
+                <version>4.1.26.Final</version>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
